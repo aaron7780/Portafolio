@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Luis González</title>
-  <meta name="description" content="Portfolio de Luis González, enfocado en diseño web, e-commerce, UX y desarrollo frontend." />
+
   <style>
     * {
       margin: 0;
@@ -15,23 +15,15 @@
     :root {
       --bg: #0f172a;
       --card: #1e293b;
-      --soft: #334155;
       --text: #f8fafc;
       --muted: #cbd5e1;
       --accent: #8b5cf6;
-      --accent-hover: #7c3aed;
     }
 
     body {
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #0f172a, #1e1b4b);
       color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
     }
 
     .container {
@@ -41,38 +33,19 @@
     }
 
     header {
-      padding: 2rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(10px);
-      background: rgba(15, 23, 42, 0.85);
-      z-index: 10;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     nav {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: white;
-    }
-
-    .menu {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
     }
 
     .menu a {
+      margin-left: 1rem;
       color: var(--muted);
-      transition: 0.3s;
+      text-decoration: none;
     }
 
     .menu a:hover {
@@ -80,13 +53,8 @@
     }
 
     .hero {
-      padding: 5rem 0 4rem;
       text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      padding: 4rem 0;
     }
 
     .hero h1 span {
@@ -94,309 +62,155 @@
     }
 
     .hero p {
-      max-width: 700px;
-      margin: 0 auto 2rem;
+      margin-top: 1rem;
       color: var(--muted);
-      font-size: 1.1rem;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 0.9rem 1.4rem;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: var(--accent-hover);
-    }
-
-    .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.15);
-      color: white;
-    }
-
-    .btn-secondary:hover {
-      background: rgba(255,255,255,0.06);
     }
 
     section {
-      padding: 4rem 0;
+      padding: 3rem 0;
     }
 
     .section-title {
-      font-size: 2rem;
-      margin-bottom: 2rem;
       text-align: center;
+      margin-bottom: 2rem;
     }
 
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .about img {
-      width: 100%;
-      max-width: 280px;
-      border-radius: 20px;
-      display: block;
-      margin: auto;
-      border: 3px solid rgba(255,255,255,0.08);
-    }
-
-    .about-text p {
+    .about p {
       color: var(--muted);
       margin-bottom: 1rem;
+      text-align: center;
     }
 
     .skills {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 1rem;
+      gap: 0.5rem;
     }
 
     .skill {
-      background: rgba(255,255,255,0.08);
-      padding: 0.6rem 1rem;
-      border-radius: 999px;
-      color: white;
-      font-size: 0.95rem;
+      background: rgba(255,255,255,0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
     }
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
     }
 
     .card {
       background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 18px;
-      overflow: hidden;
-      transition: transform 0.3s ease, border 0.3s ease;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.1);
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(139, 92, 246, 0.5);
+    .card h3 {
+      margin-bottom: 0.5rem;
     }
 
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card-content {
-      padding: 1.2rem;
-    }
-
-    .card-content h3 {
-      margin-bottom: 0.8rem;
-    }
-
-    .card-content p {
+    .card p {
       color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-
-    .card-links {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .card-links a {
-      color: var(--accent);
-      font-weight: bold;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     .contact {
       text-align: center;
     }
 
-    .contact p {
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-
     footer {
-      padding: 2rem 0;
       text-align: center;
+      padding: 2rem 0;
       color: var(--muted);
-      border-top: 1px solid rgba(255,255,255,0.08);
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-
-      .about {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .about-text {
-        text-align: center;
-      }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">Luis González</div>
-        <div class="menu">
-          <a href="#about">Sobre mí</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#contact">Contacto</a>
-        </div>
-      </nav>
+<header>
+  <div class="container">
+    <nav>
+      <div><strong>Luis González</strong></div>
+      <div class="menu">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Hola, soy <span>Luis</span></h1>
+    <p>Diseño web, e-commerce y desarrollo frontend enfocado en resultados.</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="about">
+      <p>
+        Perfil técnico con experiencia en diseño web, SEO y mejora de experiencia de usuario en e-commerce.
+      </p>
+      <p>
+        Trabajo combinando diseño y desarrollo para crear soluciones claras, funcionales y optimizadas.
+      </p>
+
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">WordPress</span>
+        <span class="skill">PrestaShop</span>
+        <span class="skill">SEO</span>
+        <span class="skill">UX/UI</span>
+      </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Hola, soy <span>Luis</span></h1>
-        <p>
-          Diseñador web y perfil técnico enfocado en e-commerce, UX, SEO y desarrollo frontend.
-          Me gusta crear experiencias digitales claras, útiles y bien cuidadas.
-        </p>
-        <div class="buttons">
-          <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-          <a href="#contact" class="btn btn-secondary">Contactar</a>
-        </div>
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Proyectos</h2>
+
+    <div class="projects-grid">
+
+      <div class="card">
+        <h3>Rediseño e-commerce</h3>
+        <p>Mejora de usabilidad, estructura y SEO en fichas de producto.</p>
       </div>
-    </section>
 
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">Sobre mí</h2>
-        <div class="about">
-          <img src="https://via.placeholder.com/300x350" alt="Foto de Luis González" />
-          <div class="about-text">
-            <p>
-              Soy un perfil con base técnica y experiencia en gestión de contenido web, diseño,
-              usabilidad y optimización SEO en entornos e-commerce.
-            </p>
-            <p>
-              He trabajado mejorando fichas de producto, diseño de interfaces y desarrollo de
-              soluciones web, incluyendo el uso de IA y herramientas como WordPress, HTML, CSS
-              y PrestaShop.
-            </p>
-            <div class="skills">
-              <span class="skill">HTML</span>
-              <span class="skill">CSS</span>
-              <span class="skill">WordPress</span>
-              <span class="skill">PrestaShop</span>
-              <span class="skill">SEO</span>
-              <span class="skill">UX/UI</span>
-              <span class="skill">GitHub</span>
-              <span class="skill">IA aplicada</span>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        <h3>Módulo PrestaShop</h3>
+        <p>Desarrollo de funcionalidades personalizadas para tiendas online.</p>
       </div>
-    </section>
 
-    <section id="projects">
-      <div class="container">
-        <h2 class="section-title">Proyectos</h2>
-        <div class="projects-grid">
-
-          <article class="card">
-            <img src="https://via.placeholder.com/600x400" alt="Proyecto rediseño ecommerce" />
-            <div class="card-content">
-              <h3>Rediseño de e-commerce</h3>
-              <p>
-                Mejora de usabilidad, estructura visual y optimización SEO en fichas de producto
-                para una tienda online.
-              </p>
-              <div class="card-links">
-                <a href="#">Ver proyecto</a>
-                <a href="#">GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="https://via.placeholder.com/600x400" alt="Proyecto módulo PrestaShop" />
-            <div class="card-content">
-              <h3>Módulo personalizado en PrestaShop</h3>
-              <p>
-                Desarrollo de un módulo para mejorar funcionalidades de tienda online y adaptar
-                procesos a necesidades reales del negocio.
-              </p>
-              <div class="card-links">
-                <a href="#">Ver proyecto</a>
-                <a href="#">GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="https://via.placeholder.com/600x400" alt="Proyecto portfolio web" />
-            <div class="card-content">
-              <h3>Portfolio personal</h3>
-              <p>
-                Diseño y maquetación de una web personal enfocada en mostrar proyectos, habilidades
-                y experiencia de forma clara y profesional.
-              </p>
-              <div class="card-links">
-                <a href="#">Ver proyecto</a>
-                <a href="#">GitHub</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
+      <div class="card">
+        <h3>Portfolio web</h3>
+        <p>Diseño y maquetación de web personal optimizada para mostrar proyectos.</p>
       </div>
-    </section>
 
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Contacto</h2>
-        <p>Si quieres hablar conmigo sobre diseño, desarrollo web o colaboraciones, aquí me tienes.</p>
-        <p><strong>Email:</strong> aaronluisgonzalez2017@gmail.com</p>
-        <p><strong>Ubicación:</strong> Orihuela, Alicante</p>
-        <div class="buttons" style="margin-top: 1.5rem;">
-          <a href="mailto:aaronluisgonzalez2017@gmail.com" class="btn btn-primary">Enviar email</a>
-          <a href="https://github.com/" target="_blank" class="btn btn-secondary">Mi GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2026 Luis González.</p>
     </div>
-  </footer>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <p>Email: aaronluisgonzalez2017@gmail.com</p>
+    <p>Orihuela, Alicante</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Luis González</p>
+  </div>
+</footer>
 
 </body>
 </html>
