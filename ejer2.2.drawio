@@ -30,7 +30,7 @@
         <mxCell id="_x4FWcND82l1v03Eb6kq-6" edge="1" parent="_x4FWcND82l1v03Eb6kq-1" source="_x4FWcND82l1v03Eb6kq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="_x4FWcND82l1v03Eb6kq-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_x4FWcND82l1v03Eb6kq-7" parent="_x4FWcND82l1v03Eb6kq-1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;fillColor=light-dark(#FFFFFF,#EDEDED);strokeColor=light-dark(#000000,#EDEDED);" value="" vertex="1">
+        <mxCell id="_x4FWcND82l1v03Eb6kq-7" parent="_x4FWcND82l1v03Eb6kq-1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;fillColor=light-dark(#121212,#EDEDED);strokeColor=light-dark(#000000,#EDEDED);" value="" vertex="1">
           <mxGeometry height="80" width="60" x="360" y="124" as="geometry" />
         </mxCell>
         <mxCell id="_x4FWcND82l1v03Eb6kq-8" parent="_x4FWcND82l1v03Eb6kq-1" style="rounded=0;whiteSpace=wrap;html=1;" value="propietario" vertex="1">
@@ -56,7 +56,7 @@
         <mxCell id="_x4FWcND82l1v03Eb6kq-14" parent="_x4FWcND82l1v03Eb6kq-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1:1" vertex="1">
           <mxGeometry height="30" width="60" x="527" y="118" as="geometry" />
         </mxCell>
-        <mxCell id="_x4FWcND82l1v03Eb6kq-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;PROPIETARIO(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; dni PK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; nombre,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; apellidos,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; direccion&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;VEHICULO(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; matricula PK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; tipo,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; marca,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; modelo,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; dni_propietario FK&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;INFRACCION(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; codigo PK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; descripcion,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; cuantia&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;MULTA(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; id_multa PK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; matricula FK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; codigo_infraccion FK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; fecha_multa,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; fecha_pago&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;" vertex="1">
+        <mxCell id="_x4FWcND82l1v03Eb6kq-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;PROPIETARIO(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; dni PK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; nombre,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; apellidos,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; direccion&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;VEHICULO(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; matricula PK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; tipo,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; marca,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; modelo,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; dni_propietario FK&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;INFRACCION(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; codigo PK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; descripcion,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; cuantia&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;MULTA(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; id_multa PK,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; matricula FK&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; fecha_multa,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; fecha_pago&lt;/div&gt;&lt;div&gt;)&lt;/div&gt;" vertex="1">
           <mxGeometry height="253" width="185" x="971" y="93" as="geometry" />
         </mxCell>
         <mxCell id="_x4FWcND82l1v03Eb6kq-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="nombre" vertex="1">
@@ -115,6 +115,11 @@
             <mxPoint x="881" y="707" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="wy-tpHcYm24k_cCw5yS5-3" edge="1" parent="1" source="_x4FWcND82l1v03Eb6kq-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="wy-tpHcYm24k_cCw5yS5-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="799" y="626" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="_x4FWcND82l1v03Eb6kq-29" parent="1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;direction=south;" value="" vertex="1">
           <mxGeometry height="60" width="80" x="841" y="578" as="geometry" />
         </mxCell>
@@ -123,17 +128,28 @@
             <mxPoint x="881" y="448" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="wy-tpHcYm24k_cCw5yS5-1" edge="1" parent="1" source="_x4FWcND82l1v03Eb6kq-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="wy-tpHcYm24k_cCw5yS5-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="779" y="554" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="_x4FWcND82l1v03Eb6kq-30" parent="1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;rotation=-90;" value="" vertex="1">
           <mxGeometry height="80" width="60" x="851" y="508" as="geometry" />
         </mxCell>
         <mxCell id="_x4FWcND82l1v03Eb6kq-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="infracciónes" vertex="1">
           <mxGeometry height="60" width="120" x="821" y="677" as="geometry" />
         </mxCell>
-        <mxCell id="_x4FWcND82l1v03Eb6kq-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0:N" vertex="1">
+        <mxCell id="_x4FWcND82l1v03Eb6kq-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0:M" vertex="1">
           <mxGeometry height="30" width="60" x="810" y="473" as="geometry" />
         </mxCell>
-        <mxCell id="_x4FWcND82l1v03Eb6kq-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0:N" vertex="1">
+        <mxCell id="_x4FWcND82l1v03Eb6kq-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0:M" vertex="1">
           <mxGeometry height="30" width="60" x="806" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="wy-tpHcYm24k_cCw5yS5-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="fecha_multa" vertex="1">
+          <mxGeometry height="60" width="100" x="702" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="wy-tpHcYm24k_cCw5yS5-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="fecha_pago" vertex="1">
+          <mxGeometry height="58" width="90" x="697" y="602" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
